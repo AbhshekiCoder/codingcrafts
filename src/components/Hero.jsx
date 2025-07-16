@@ -53,7 +53,7 @@ const Hero = ({ darkMode }) => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative"
+            className="relative  "
           >
             {/* Gradient Card */}
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border-8 border-white">
@@ -80,7 +80,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Floating Discount Badge */}
             <motion.div
-              className="absolute -top-6 -left-6 bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center shadow-lg"
+              className="absolute -top-6 -left-6 bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center shadow-lg max-md:w-14 max-md:h-14 max-md:-left-3"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -89,7 +89,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Floating Support Badge */}
             <motion.div
-              className="absolute -bottom-6 -right-6 bg-green-500 w-20 h-20 rounded-full flex items-center justify-center shadow-lg"
+              className="absolute -bottom-6 -right-6 bg-green-500 w-20 h-20 rounded-full flex items-center justify-center shadow-lg  max-md:-right-3"
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
